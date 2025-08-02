@@ -1,0 +1,99 @@
+"use client";
+
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet";
+import { Menu, Search, ShoppingCart, Upload, User, Package } from "lucide-react";
+import { MedicosLogo } from "../icons/MedicosLogo";
+
+const navLinks = [
+  { href: "#services", label: "Services" },
+  { href: "#categories", label: "Medicines" },
+  { href: "#how-it-works", label: "How It Works" },
+  { href: "#testimonials", label: "Testimonials" },
+];
+
+export function Header() {
+  return (
+    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <div className="container flex h-16 items-center">
+        <div className="mr-4 hidden md:flex">
+          <Link href="/" className="mr-6 flex items-center space-x-2">
+            <MedicosLogo className="h-6 w-6 text-primary" />
+            <span className="hidden font-bold sm:inline-block font-headline text-lg">
+              Medicos
+            </span>
+          </Link>
+          <nav className="flex items-center space-x-6 text-sm font-medium">
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="transition-colors hover:text-primary"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </nav>
+        </div>
+
+        <Sheet>
+          <SheetTrigger asChild>
+            <Button
+              variant="ghost"
+              size="icon"
+              className="md:hidden"
+              aria-label="Toggle Navigation"
+            >
+              <Menu className="h-6 w-6" />
+            </Button>
+          </SheetTrigger>
+          <SheetContent side="left">
+            <Link href="/" className="mr-6 flex items-center space-x-2 mb-6">
+              <MedicosLogo className="h-6 w-6 text-primary" />
+              <span className="font-bold font-headline text-lg">Medicos</span>
+            </Link>
+            <div className="flex flex-col space-y-4">
+              {navLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="transition-colors hover:text-primary text-lg"
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
+          </SheetContent>
+        </Sheet>
+        
+        {/* Mobile-first logo */}
+        <div className="flex md:hidden flex-1 justify-center">
+             <Link href="/" className="flex items-center space-x-2">
+                <MedicosLogo className="h-6 w-6 text-primary" />
+                <span className="font-bold sm:inline-block font-headline text-lg">Medicos</span>
+            </Link>
+        </div>
+
+        <div className="flex flex-1 items-center justify-end space-x-2">
+          <Button variant="outline" className="hidden sm:flex items-center gap-2">
+            <Upload className="h-4 w-4" />
+            Upload Prescription
+          </Button>
+          <Button variant="ghost" size="icon" aria-label="Search">
+            <Search className="h-5 w-5" />
+          </Button>
+          <Button variant="ghost" size="icon" aria-label="Order Tracking">
+            <Package className="h-5 w-5" />
+          </Button>
+          <Button variant="ghost" size="icon" aria-label="Shopping Cart">
+            <ShoppingCart className="h-5 w-5" />
+          </Button>
+          <Button variant="ghost" size="icon" aria-label="User Profile">
+            <User className="h-5 w-5" />
+          </Button>
+        </div>
+      </div>
+    </header>
+  );
+}
