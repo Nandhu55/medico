@@ -64,6 +64,14 @@ export function Header() {
                 </Link>
               ))}
             </div>
+            <div className="mt-6 flex flex-col gap-2">
+                <Button variant="outline" asChild>
+                    <Link href="/login">Login</Link>
+                </Button>
+                <Button asChild>
+                    <Link href="/signup">Sign Up</Link>
+                </Button>
+            </div>
           </SheetContent>
         </Sheet>
         
@@ -89,9 +97,14 @@ export function Header() {
           <Button variant="ghost" size="icon" aria-label="Shopping Cart">
             <ShoppingCart className="h-5 w-5" />
           </Button>
-          <Button variant="ghost" size="icon" aria-label="User Profile">
-            <User className="h-5 w-5" />
-          </Button>
+          <div className="hidden sm:flex items-center gap-2">
+             <Button variant="ghost" asChild>
+                <Link href="/login">Login</Link>
+             </Button>
+             <Button asChild>
+                <Link href="/signup">Sign Up</Link>
+             </Button>
+          </div>
         </div>
       </div>
     </header>
