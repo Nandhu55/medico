@@ -5,6 +5,14 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet";
 import { Menu, Search, ShoppingCart, Upload, User, Package } from "lucide-react";
 import { MedicosLogo } from "../icons/MedicosLogo";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog"
+import { Input } from "@/components/ui/input";
 
 const navLinks = [
   { href: "#services", label: "Services" },
@@ -88,9 +96,29 @@ export function Header() {
             <Upload className="h-4 w-4" />
             Upload Prescription
           </Button>
-          <Button variant="ghost" size="icon" aria-label="Search">
-            <Search className="h-5 w-5" />
-          </Button>
+          <Dialog>
+            <DialogTrigger asChild>
+              <Button variant="ghost" size="icon" aria-label="Search">
+                <Search className="h-5 w-5" />
+              </Button>
+            </DialogTrigger>
+            <DialogContent className="sm:max-w-[425px]">
+              <DialogHeader>
+                <DialogTitle>Search Products</DialogTitle>
+              </DialogHeader>
+              <form className="flex items-center gap-2">
+                <Input
+                  id="search"
+                  placeholder="Search for medicines, health products..."
+                  className="flex-1"
+                />
+                <Button type="submit" size="icon" aria-label="Submit Search">
+                  <Search className="h-5 w-5" />
+                </Button>
+              </form>
+            </DialogContent>
+          </Dialog>
+
           <Button variant="ghost" size="icon" aria-label="Order Tracking">
             <Package className="h-5 w-5" />
           </Button>
