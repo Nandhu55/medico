@@ -94,8 +94,10 @@ export function Header() {
           <Button variant="ghost" size="icon" aria-label="Order Tracking">
             <Package className="h-5 w-5" />
           </Button>
-          <Button variant="ghost" size="icon" aria-label="Shopping Cart">
-            <ShoppingCart className="h-5 w-5" />
+          <Button variant="ghost" size="icon" asChild>
+            <Link href="/cart" aria-label="Shopping Cart">
+              <ShoppingCart className="h-5 w-5" />
+            </Link>
           </Button>
           <div className="hidden sm:flex items-center gap-2">
              <Button variant="ghost" asChild>
