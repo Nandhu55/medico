@@ -1,3 +1,4 @@
+
 "use client";
 
 import Link from "next/link";
@@ -92,9 +93,11 @@ export function Header() {
         </div>
 
         <div className="flex flex-1 items-center justify-end space-x-2">
-          <Button variant="outline" className="hidden sm:flex items-center gap-2">
-            <Upload className="h-4 w-4" />
-            Upload Prescription
+          <Button variant="outline" className="hidden sm:flex items-center gap-2" asChild>
+            <Link href="/upload-prescription">
+              <Upload className="h-4 w-4" />
+              Upload Prescription
+            </Link>
           </Button>
           <Dialog>
             <DialogTrigger asChild>
