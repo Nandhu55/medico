@@ -15,7 +15,7 @@ import Link from "next/link";
 
 export default function Home() {
   const categories = [
-    { name: 'OTC Drugs', image: 'https://placehold.co/400x300.png' }
+    { name: 'Tamoxifen', image: 'https://placehold.co/400x300.png' }
   ];
 
   return (
