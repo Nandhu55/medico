@@ -15,41 +15,47 @@ export function Pill2DoorLogo(props: SVGProps<SVGSVGElement>) {
             .pill2door-text {
               font-family: 'PT Sans', sans-serif;
               font-weight: 700;
-              font-size: 24px;
+              font-size: 28px;
+              fill: hsl(var(--primary));
             }
+             .pill2door-stethoscope-path {
+                stroke: hsl(var(--primary));
+             }
+             .pill2door-accent-circle {
+                fill: hsl(var(--accent));
+             }
           `}
         </style>
       </defs>
       
       {/* Stethoscope */}
       <path
-        d="M 55 25 C 55 42.6 40 50 30 50 C 10 50 5 30 5 25 C 5 5 25 5 30 5 C 35 5 55 10 55 25 Z M 190 45 A 5 5 0 0 1 190 35"
-        stroke="#007B8A"
+        className="pill2door-stethoscope-path"
+        d="M 45 25 C 45 38.8 35 45 25 45 C 15 45 5 35 5 25 C 5 15 15 5 25 5 C 35 5 45 11.2 45 25 Z M 190 40 A 5 5 0 0 1 190 30"
         strokeWidth="3"
         fill="none"
-        transform="translate(0, -5)"
+        transform="translate(0, -2)"
       />
       <path
-        d="M 55 20 C 65 10 80 10 80 10 L 150 10 C 150 10 170 10 180 25 L 185 30 L 190 40"
-        stroke="#007B8A"
+        className="pill2door-stethoscope-path"
+        d="M 45 23 C 55 13 65 10 80 10 L 150 10 C 165 10 175 15 180 25 L 185 30 L 190 35"
         strokeWidth="3"
         fill="none"
-        transform="translate(0, -5)"
+        transform="translate(0, -2)"
       />
-      <circle cx="190" cy="40" r="4" fill="#007B8A" transform="translate(0, -5)"/>
+      <circle className="pill2door-stethoscope-path" cx="190" cy="35" r="4" fill="hsl(var(--primary))" transform="translate(0, -2)"/>
       
       {/* Plus icon in circle */}
-      <circle cx="30" cy="20" r="12" fill="#00C4B4" />
+      <circle className="pill2door-accent-circle" cx="25" cy="23" r="14" />
       <path
-        d="M 26 20 L 34 20 M 30 16 L 30 24"
+        d="M 20 23 L 30 23 M 25 18 L 25 28"
         stroke="white"
         strokeWidth="2.5"
         strokeLinecap="round"
       />
 
       {/* Text */}
-      <text x="85" y="22" className="pill2door-text" fill="#007B8A">PILL 2</text>
-      <text x="85" y="45" className="pill2door-text" fill="#007B8A">DOOR</text>
+      <text x="75" y="35" className="pill2door-text">PILL2DOOR</text>
     </svg>
   );
 }
