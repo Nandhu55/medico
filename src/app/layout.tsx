@@ -5,9 +5,9 @@ import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 
 export const metadata: Metadata = {
-  title: 'Medicos | Affordable Care, Anywhere.',
+  title: 'PILL 2 DOOR | Affordable Care, Anywhere.',
   description: 'Your one-stop shop for affordable medicine delivery and healthcare services. Browse medicines, upload prescriptions, and get them delivered to your doorstep.',
-  keywords: ['medicine delivery', 'online pharmacy', 'healthcare', 'doctor consultation', 'Medicos']
+  keywords: ['medicine delivery', 'online pharmacy', 'healthcare', 'doctor consultation', 'PILL 2 DOOR']
 };
 
 export default function RootLayout({

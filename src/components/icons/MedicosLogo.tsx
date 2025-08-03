@@ -1,3 +1,4 @@
+// This file is deprecated. Please use Pill2DoorLogo.tsx instead.
 import type { SVGProps } from "react";
 
 export function MedicosLogo(props: SVGProps<SVGSVGElement>) {
