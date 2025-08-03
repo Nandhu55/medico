@@ -28,10 +28,9 @@ export default function Home() {
       <section className="relative w-full h-[550px] bg-background">
         <Image
             src="https://placehold.co/1920x1080.png"
-            layout="fill"
-            objectFit="cover"
+            fill
             alt="Hero Background"
-            className="z-0"
+            className="z-0 object-cover"
             data-ai-hint="pharmacy interior"
         />
         <div className="relative z-10 container h-full flex flex-col items-center justify-center text-center px-4 md:px-6 space-y-6 bg-black/50">
