@@ -24,7 +24,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-col min-h-[100dvh]">
-      <section className="relative w-full h-[60vh] md:h-[80vh] bg-background">
+      <section className="relative w-full h-[550px] bg-background">
         <Image
             src="https://placehold.co/1920x1080.png"
             layout="fill"
