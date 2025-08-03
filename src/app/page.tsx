@@ -32,7 +32,7 @@ export default function Home() {
         <div className="relative z-10 container h-full flex flex-col items-center justify-center text-center px-4 md:px-6 space-y-6 bg-black/50">
           <div className="space-y-4">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none font-headline text-white">
-              Medicos: Affordable Care, Anywhere.
+              PILL 2 DOOR: Affordable Care, Anywhere.
             </h1>
             <p className="mx-auto max-w-[700px] text-gray-200 md:text-xl">
               Your trusted partner for fast, reliable, and affordable medicine delivery and healthcare services.
@@ -170,7 +170,7 @@ export default function Home() {
           <Carousel className="w-full max-w-4xl mx-auto">
             <CarouselContent>
               {[
-                { name: "Sarah L.", review: "Medicos is a lifesaver! The one-day delivery is incredibly fast, and their prices are the best I've found online." },
+                { name: "Sarah L.", review: "PILL 2 DOOR is a lifesaver! The one-day delivery is incredibly fast, and their prices are the best I've found online." },
                 { name: "John D.", review: "Uploading my prescription was so easy, and the customer support team was very helpful. Highly recommended!" },
                 { name: "Anita P.", review: "The monthly refill reminder is a fantastic feature. I never have to worry about running out of my essential medications." }
               ].map((testimonial, index) => (
