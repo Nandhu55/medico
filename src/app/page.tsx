@@ -12,14 +12,15 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel"
 import Link from "next/link";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 export default function Home() {
   const categories = [
-    { name: 'Tamoxifen', image: 'https://placehold.co/400x300.png' },
-    { name: 'Ketosteril', image: 'https://placehold.co/400x300.png' },
-    { name: 'Thyronorm', image: 'https://placehold.co/400x300.png' },
-    { name: 'Metoprolol', image: 'https://placehold.co/400x300.png' },
-    { name: 'Metformin', image: 'https://placehold.co/400x300.png' }
+    { name: 'Tamoxifen (For Cancer)', image: 'https://placehold.co/400x300.png' },
+    { name: 'Ketosteril (For Kidney Diseases)', image: 'https://placehold.co/400x300.png' },
+    { name: 'Thyronorm (For Thyroid)', image: 'https://placehold.co/400x300.png' },
+    { name: 'Metoprolol (Cardiac)', image: 'https://placehold.co/400x300.png' },
+    { name: 'Metformin (Diabetes)', image: 'https://placehold.co/400x300.png' }
   ];
 
   return (
@@ -133,8 +134,23 @@ export default function Home() {
               We're committed to making healthcare accessible to everyone. Our rural access program provides one month of free medicine to underserved communities.
             </p>
           </div>
-          <div className="mx-auto w-full max-w-sm space-y-2">
-            <Button type="button" size="lg" variant="outline">Learn More</Button>
+          <div className="mx-auto w-full max-w-2xl space-y-2">
+             <Accordion type="single" collapsible className="w-full">
+              <AccordionItem value="item-1">
+                <AccordionTrigger className="text-lg font-semibold">Learn More</AccordionTrigger>
+                <AccordionContent className="text-left text-base text-muted-foreground space-y-4 pt-4">
+                  <p>
+                    Our Rural Access Program is at the heart of our mission. We believe that geographical location should not be a barrier to quality healthcare. Through this initiative, we partner with local health workers and community centers to identify families and individuals in remote areas who lack access to essential medications.
+                  </p>
+                  <p>
+                    Once identified, we provide a one-month supply of necessary medicines completely free of charge. This includes everything from chronic disease medications to essential vitamins and supplements. Our goal is to bridge the gap in healthcare access and create healthier communities, one village at a time.
+                  </p>
+                  <p>
+                    <strong>Key impacts:</strong> We've reached over 10,000 individuals across 50 villages, leading to better management of chronic conditions and improved overall health outcomes in these communities.
+                  </p>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
           </div>
         </div>
       </section>
