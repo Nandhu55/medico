@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { MedicosLogo } from "../icons/MedicosLogo";
 
 export function Footer() {
   return (
@@ -9,7 +8,7 @@ export function Footer() {
       <div className="container py-12 px-4 md:px-6 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
         <div className="space-y-4">
           <Link href="/" className="flex items-center space-x-2">
-            <MedicosLogo className="h-10 w-auto text-primary" />
+            <span className="font-bold text-lg text-primary">Medicos</span>
           </Link>
           <p className="max-w-xs">
             Affordable Care, Anywhere. Your trusted online pharmacy.
