@@ -18,7 +18,8 @@ export default function Home() {
     { name: 'Tamoxifen', image: 'https://placehold.co/400x300.png' },
     { name: 'Ketosteril', image: 'https://placehold.co/400x300.png' },
     { name: 'Thyronorm', image: 'https://placehold.co/400x300.png' },
-    { name: 'Metoprolol', image: 'https://placehold.co/400x300.png' }
+    { name: 'Metoprolol', image: 'https://placehold.co/400x300.png' },
+    { name: 'Metformin', image: 'https://placehold.co/400x300.png' }
   ];
 
   return (
@@ -109,7 +110,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="mx-auto grid grid-cols-1 gap-6 py-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+          <div className="mx-auto grid grid-cols-1 gap-6 py-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
             {categories.map(category => (
                <Card key={category.name}>
                   <CardHeader className="p-0">
