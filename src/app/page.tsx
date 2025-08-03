@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
-import { Search, ArrowRight, HeartPulse, Truck, FlaskConical, Stethoscope, Star } from "lucide-react";
+import { Search, ArrowRight, HeartPulse, Truck, FlaskConical, Stethoscope, Star, Plus } from "lucide-react";
 import Image from "next/image";
 import {
   Carousel,
@@ -32,7 +32,7 @@ export default function Home() {
         <div className="relative z-10 container h-full flex flex-col items-center justify-center text-center px-4 md:px-6 space-y-6 bg-black/50">
           <div className="space-y-4">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none font-headline text-white">
-              PILL 2 DOOR: Affordable Care, Anywhere.
+              Affordable Care, Anywhere.
             </h1>
             <p className="mx-auto max-w-[700px] text-gray-200 md:text-xl">
               Your trusted partner for fast, reliable, and affordable medicine delivery and healthcare services.
