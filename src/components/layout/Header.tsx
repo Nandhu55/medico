@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet";
 import { Menu, Search, ShoppingCart, Upload, User, Package } from "lucide-react";
-import { Pill2DoorLogo } from "../icons/Pill2DoorLogo";
+import { MedicosLogo } from "../icons/MedicosLogo";
 import {
   Dialog,
   DialogContent,
@@ -28,7 +28,7 @@ export function Header() {
       <div className="container flex h-16 items-center">
         <div className="mr-4 hidden md:flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
-            <Pill2DoorLogo className="h-10 w-auto" />
+            <MedicosLogo className="h-10 w-auto" />
           </Link>
           <nav className="flex items-center space-x-6 text-sm font-medium">
             {navLinks.map((link) => (
@@ -56,7 +56,7 @@ export function Header() {
           </SheetTrigger>
           <SheetContent side="left">
             <Link href="/" className="mr-6 flex items-center space-x-2 mb-6">
-              <Pill2DoorLogo className="h-10 w-auto" />
+              <MedicosLogo className="h-10 w-auto" />
             </Link>
             <div className="flex flex-col space-y-4">
               {navLinks.map((link) => (
@@ -83,7 +83,7 @@ export function Header() {
         {/* Mobile-first logo */}
         <div className="flex md:hidden flex-1 justify-center">
              <Link href="/" className="flex items-center space-x-2">
-                <Pill2DoorLogo className="h-10 w-auto" />
+                <MedicosLogo className="h-10 w-auto" />
             </Link>
         </div>
 

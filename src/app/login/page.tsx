@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Pill2DoorLogo } from "@/components/icons/Pill2DoorLogo";
+import { MedicosLogo } from "@/components/icons/MedicosLogo";
 import Link from "next/link";
 
 export default function LoginPage() {
@@ -11,9 +11,9 @@ export default function LoginPage() {
       <Card className="mx-auto max-w-sm w-full">
         <CardHeader className="text-center">
             <div className="flex justify-center items-center mb-4">
-                <Pill2DoorLogo className="h-16 w-auto text-primary" />
+                <MedicosLogo className="h-16 w-auto text-primary" />
             </div>
-          <CardTitle className="text-2xl font-bold font-headline">Login to PILL 2 DOOR</CardTitle>
+          <CardTitle className="text-2xl font-bold font-headline">Login to Medicos</CardTitle>
           <CardDescription>
             Enter your email below to login to your account
           </CardDescription>

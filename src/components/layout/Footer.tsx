@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { Pill2DoorLogo } from "../icons/Pill2DoorLogo";
+import { MedicosLogo } from "../icons/MedicosLogo";
 
 export function Footer() {
   return (
@@ -9,7 +9,7 @@ export function Footer() {
       <div className="container py-12 px-4 md:px-6 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
         <div className="space-y-4">
           <Link href="/" className="flex items-center space-x-2">
-            <Pill2DoorLogo className="h-10 w-auto text-primary" />
+            <MedicosLogo className="h-10 w-auto text-primary" />
           </Link>
           <p className="max-w-xs">
             Affordable Care, Anywhere. Your trusted online pharmacy.
@@ -44,7 +44,7 @@ export function Footer() {
       </div>
       <div className="border-t">
         <div className="container py-6 px-4 md:px-6 flex flex-col md:flex-row justify-between items-center text-sm">
-          <p>&copy; {new Date().getFullYear()} PILL 2 DOOR. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Medicos. All rights reserved.</p>
           <div className="flex items-center space-x-4 mt-4 md:mt-0">
             {/* Social icons would go here */}
           </div>
