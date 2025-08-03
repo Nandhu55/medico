@@ -16,7 +16,8 @@ import Link from "next/link";
 export default function Home() {
   const categories = [
     { name: 'Tamoxifen', image: 'https://placehold.co/400x300.png' },
-    { name: 'Ketosteril', image: 'https://placehold.co/400x300.png' }
+    { name: 'Ketosteril', image: 'https://placehold.co/400x300.png' },
+    { name: 'Thyronorm', image: 'https://placehold.co/400x300.png' }
   ];
 
   return (
